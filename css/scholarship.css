@@ -1,0 +1,6 @@
+.tuition li{
+  list-style: decimal;
+}
+.scholarship li{
+  list-style-type: disc;
+}

@@ -1,3 +1,149 @@
-.header{
-  height: 80px;
+/* 300 50 500 */
+@media screen and (min-width: 1200px) {
+  .carousel {
+    width: 44%;
+  }
+
+  .home-font {
+    width: 44%;
+    margin-top: 4%;
+  }
+
+  .home-title {
+    width: 44%;
+    margin-left: auto;
+  }
+  .home-main{
+    padding-top: 15%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .carousel {
+    width: 50%;
+  }
+
+  .home-font {
+    width: 50%;
+    margin-top: 4%;
+  }
+  .home-title{
+    margin-left: auto;
+  }
+  .home-main{
+    padding-top: 15%;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+  .carousel {
+    width: 80%;
+  }
+
+  .home-font {
+    width: 80%;
+    margin-top: 4%;
+  }
+  .home-title{
+    margin-left: auto;
+  }
+  .home-main{
+    padding-top: 15%;
+  }
+}
+
+@media screen and (min-width: 545px) and (max-width: 767px) {
+  .carousel {
+    width: 80%;
+    margin-top: 500px;
+  }
+
+  .home-font {
+    width: 80%;
+    margin-top: 50px;
+  }
+  .home-h1{
+    font-size: 30px;
+  }
+  .home-title{
+    margin-left: 10%;
+  }
+  .home-main{
+    padding-top: 300px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .carousel {
+    width: 80%;
+    margin-top: 500px;
+  }
+
+  .home-font {
+    width: 80%;
+    margin-top: 50px;
+  }
+  .home-h1{
+    font-size: 30px;
+  }
+  .home-title{
+    margin-left: 10%;
+  }
+  .home-main{
+    padding-top: 300px;
+  }
+}
+
+#main {
+  background: url('../imgs/home-background.jpg') no-repeat fixed;
+  background-size: cover;
+}
+
+
+.home-main {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5%;
+  background-color: rgba(104, 104, 104, 0.7);
+  opacity: 0.9;
+}
+
+.home-title {
+  margin-right: auto;
+  color: #fff;
+  text-align: left;
+}
+.home-font {
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  text-align: left;
+}
+
+.home-font {
+  font-size: 16px;
+}
+
+.carousel {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 37%;
+}
+
+.home-h3 {
+  min-height: 60px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  margin: auto;
+  text-align: center;
+  line-height: 50px;
+}
+
+.home-h3>a>span {
+  color: #fff;
+}
+
+.home-h3>a:hover {
+  text-decoration: none;
 }

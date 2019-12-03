@@ -1,0 +1,142 @@
+.certificate-container{
+  width: 100%;
+}
+.certificate-title{
+  width: 100%;
+  height: 100px;
+  background-color: #002f6c;
+  color: #fff;
+}
+.title,.main{
+  margin:0 auto;
+}
+.h1{
+  line-height: 100px;
+}
+.main{
+  color: #002f6c;
+}
+.main-h3{
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.main-p{
+  font-size: 16px;
+  line-height: 50px;
+}
+.main-p p{
+  margin: 0;
+}
+.main-p ul li{
+  list-style-type: disc;
+}
+.main-footer{
+  width: 100%;
+  margin-top:50px;
+  text-align: center;
+}
+.course{
+  margin-top: 20px;
+}
+.certificate-footer{
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  background-color: rgba(0,0,0,0.3);
+  text-align: center;
+  line-height: 50px;
+}
+.certificate-footer p{
+  margin: 0;
+  color: #8c8c8c;
+}
+@media screen and (min-width: 1200px) {
+  .title{
+    width: 45%;
+  }
+  .main{
+    width: 45%;
+  }
+  .every-card{
+    width: 31.9%;
+  }
+  .carousel {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .title{
+    width: 79%;
+  }
+  .main{
+    width: 83.5%;
+  }
+  .every-card{
+    width: 31.9%;
+  }
+  .carousel {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+  .title {
+    width: 90%;
+  }
+  .main{
+    width: 100%;
+  }
+  .every-card{
+    width: 31.9%;
+  }
+  .carousel {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 545px) and (max-width: 767px) {
+  .title {
+    width: 90%;
+  }
+  .main{
+    width: 85%;
+  }
+  .every-card{
+    width: 49%;
+  }
+  .carousel {
+    width: 80%;
+  }
+
+  .h1 {
+    font-size: 30px;
+  }
+
+  .h3 {
+    font-size: 20px;
+    ;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .title {
+    width: 90%;
+  }
+  .main{
+    width: 85%;
+  }
+  .every-card{
+    width: 100%;
+  }
+  .carousel {
+    width: 80%;
+  }
+
+  .h1 {
+    font-size: 30px;
+  }
+
+  .h3 {
+    font-size: 20px;
+  }
+}

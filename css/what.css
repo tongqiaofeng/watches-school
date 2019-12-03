@@ -1,0 +1,114 @@
+.what-container,.what-main{
+  width: 100%;
+  color: #002f6c;
+}
+.what-title{
+  height: 100px;
+  color: #fff;
+  background-color: #002f6c;
+}
+.title,.main{
+  margin-left: auto;
+  margin-right: auto;
+}
+.main{
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.people{
+  margin-bottom: 40px;
+}
+.what-font{
+  font-size: 16px;
+  line-height: 50px;
+}
+.what-jump a{
+  font-size: 18px;
+  color: #f90032;
+}
+.h1{
+  line-height: 100px;
+}
+.carousel {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+} 
+.what-footer{
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  background-color: #bbb;
+  line-height: 50px;
+  text-align: center;
+}
+.what-footer p{
+  color: #888;
+}
+@media screen and (min-width: 1200px) {
+  .title,.main{
+    width: 45%;
+  }
+
+  .carousel {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .title,.main {
+    width: 90%;
+  }
+
+  .carousel {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+  .title,.main {
+    width: 90%;
+  }
+
+  .carousel {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 545px) and (max-width: 767px) {
+  .title,.main {
+    width: 90%;
+  }
+
+  .carousel {
+    width: 80%;
+  }
+
+  .h1 {
+    font-size: 30px;
+  }
+
+  .h3 {
+    font-size: 20px;
+    ;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .title,.main {
+    width: 90%;
+  }
+
+  .carousel {
+    width: 80%;
+  }
+
+  .h1 {
+    font-size: 30px;
+  }
+
+  .h3 {
+    font-size: 20px;
+    ;
+  }
+}

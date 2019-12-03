@@ -1,0 +1,176 @@
+.workshop-title {
+  width: 100%;
+  height: 100px;
+  color: #fff;
+  background-color: #002f6c;
+}
+
+.h1 {
+  line-height: 100px;
+}
+
+.title,
+.main {
+  margin: 0 auto;
+}
+
+.main-img {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.workshop-footer {
+  width: 100%;
+  /* position: absolute;
+  bottom: 0; */
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (min-width: 1260px) {
+  .title {
+    width: 49%;
+  }
+
+  .main {
+    width: 50%;
+  }
+
+  .main-img {
+    width: 24%;
+  }
+
+  .main-img a img {
+    width: 205px;
+    height: 140px;
+  }
+
+  .workshop-footer {
+    height: 110px;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1259px) {
+  .title {
+    width: 73%;
+  }
+
+  .main {
+    width: 75%;
+  }
+
+  .main-img {
+    width: 24%;
+  }
+
+  .main-img a img {
+    width: 205px;
+    height: 140px;
+  }
+
+  .workshop-footer {
+    height: 110px;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .title {
+    width: 85%;
+  }
+
+  .main {
+    width: 90%;
+  }
+
+  .main-img {
+    width: 24%;
+  }
+
+  .main-img a img {
+    width: 205px;
+    height: 140px;
+  }
+
+  .workshop-footer {
+    height: 110px;
+    line-height: 100px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+  .title {
+    width: 90%;
+  }
+
+  .main {
+    width: 80%;
+  }
+
+  .main-img {
+    width: 15%;
+  }
+
+  .workshop-footer {
+    height: 100px;
+    line-height: 100px;
+  }
+}
+
+@media screen and (min-width: 545px) and (max-width: 767px) {
+  .title {
+    width: 85%;
+  }
+
+  .main {
+    width: 90%;
+  }
+
+  .main-img {
+    width: 49%;
+  }
+
+  .h1 {
+    font-size: 30px;
+  }
+
+  .h3 {
+    font-size: 20px;
+  }
+
+  .workshop-footer {
+    height: 50px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .title {
+    width: 90%;
+  }
+
+  .main {
+    width: 90%;
+  }
+
+  .main-img {
+    width: 60%;
+  }
+
+  .h1 {
+    font-size: 30px;
+  }
+
+  .h3 {
+    font-size: 20px;
+  }
+
+  .workshop-footer {
+    height: 50px;
+    line-height: 50px;
+  }
+}

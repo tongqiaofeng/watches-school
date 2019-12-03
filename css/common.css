@@ -10,3 +10,20 @@ a{
   text-decoration:none;
   color:#000;
 } 
+span,p{
+  line-height: 40px;
+}
+.container-fluid{
+  padding: 0;
+}
+
+.footer{
+  height: 45px;
+  line-height: 45px;
+  background-color: #fff;
+  color: #666;
+  text-align: center;
+}
+.footer-container{
+  background-color: #ddd;
+}

@@ -5969,8 +5969,8 @@ button.close {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   background: transparent no-repeat center center;
   background-size: 100% 100%;
 }
@@ -6006,10 +6006,11 @@ button.close {
   -webkit-box-flex: 0;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
-  width: 30px;
-  height: 3px;
-  margin-right: 3px;
-  margin-left: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-left: 5px;
   text-indent: -999px;
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -6035,7 +6036,7 @@ button.close {
 }
 
 .carousel-indicators .active {
-  background-color: #fff;
+  background-color: #0aa1ed;
 }
 
 .carousel-caption {
