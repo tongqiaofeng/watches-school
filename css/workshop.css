@@ -9,9 +9,16 @@
   line-height: 100px;
 }
 
-.title,
+.title,.main {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .main {
-  margin: 0 auto;
+  /* width: 80%; */
+  display: flex;
+  /* justify-content: space-between; */
+  flex-flow: row wrap;
 }
 
 .main-img {
@@ -22,17 +29,107 @@
   box-sizing: border-box;
 }
 
+.main-img a img {
+  border-radius: 2px;
+}
+
 .workshop-footer {
   width: 100%;
   /* position: absolute;
   bottom: 0; */
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #ddd;
 }
 
-@media screen and (min-width: 1260px) {
+.mask-img {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: rgba(0, 0, 0, .7);
+}
+
+.picture {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: #ddd;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.picture .phone {
+  vertical-align: middle;
+  /* width: 400px;
+  height: 400px; */
+}
+
+.picture .left,
+.picture .right {
+  position: absolute;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.left:hover,
+.right:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1730px) {
   .title {
-    width: 49%;
+    width: 48%;
+  }
+
+  .main {
+    width: 48%;
+  }
+
+  .main-img {
+    width: 25%;
+  }
+
+  .main-img a img {
+    width: 205px;
+    height: 140px;
+  }
+
+  .workshop-footer {
+    height: 110px;
+    padding-top: 10px;
+  }
+
+  .phone {
+    max-width: 1500px;
+    max-height: 800px;
+  }
+
+  .picture .left {
+    left: 5%;
+    top: 285px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
+
+  .picture .right {
+    right: 5%;
+    top: 285px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (min-width: 1260px) and (max-width: 1730px) {
+  .title {
+    width: 50%;
   }
 
   .main {
@@ -40,7 +137,7 @@
   }
 
   .main-img {
-    width: 24%;
+    width: 33%;
   }
 
   .main-img a img {
@@ -51,20 +148,41 @@
   .workshop-footer {
     height: 110px;
     padding-top: 10px;
+  }
+
+  .phone {
+    max-width: 968px;
+    max-height: 770px;
+  }
+
+  .picture .left {
+    left: 5%;
+    top: 285px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
+
+  .picture .right {
+    right: 5%;
+    top: 285px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
   }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1259px) {
   .title {
-    width: 73%;
+    width: 70%;
   }
 
   .main {
-    width: 75%;
+    width: 70%;
   }
 
   .main-img {
-    width: 24%;
+    width: 33%;
   }
 
   .main-img a img {
@@ -76,19 +194,40 @@
     height: 110px;
     padding-top: 10px;
   }
+
+  .phone {
+    max-width: 868px;
+    max-height: 670px;
+  }
+
+  .picture .left {
+    left: 5%;
+    top: 245px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
+
+  .picture .right {
+    right: 5%;
+    top: 245px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .title {
-    width: 85%;
+    width: 70%;
   }
 
   .main {
-    width: 90%;
+    width: 70%;
   }
 
   .main-img {
-    width: 24%;
+    width: 33%;
   }
 
   .main-img a img {
@@ -100,24 +239,71 @@
     height: 110px;
     line-height: 100px;
   }
+
+  .phone {
+    max-width: 768px;
+    max-height: 570px;
+  }
+
+  .picture .left {
+    left: 5%;
+    top: 235px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
+
+  .picture .right {
+    right: 5%;
+    top: 235px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
 }
 
 @media screen and (min-width:768px) and (max-width:991px) {
   .title {
-    width: 90%;
+    width: 77%;
   }
 
   .main {
-    width: 80%;
+    width: 81%;
   }
 
   .main-img {
-    width: 15%;
+    width: 49%;
+  }
+
+  .main-img a img {
+    width: 300px;
+    height: 200px;
   }
 
   .workshop-footer {
     height: 100px;
     line-height: 100px;
+  }
+
+  .phone {
+    max-width: 668px;
+    max-height: 570px;
+  }
+
+  .picture .left {
+    left: 5%;
+    top: 245px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
+
+  .picture .right {
+    right: 5%;
+    top: 245px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
   }
 }
 
@@ -127,11 +313,16 @@
   }
 
   .main {
-    width: 90%;
+    width: 85%;
   }
 
   .main-img {
-    width: 49%;
+    width: 80%;
+  }
+
+  .main-img a img {
+    width: 300px;
+    height: 200px;
   }
 
   .h1 {
@@ -146,21 +337,47 @@
     height: 50px;
     line-height: 50px;
   }
+
+  .phone {
+    max-width: 568px;
+    max-height: 570px;
+  }
+
+  .picture .left {
+    left: 5%;
+    top: 185px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
+
+  .picture .right {
+    right: 5%;
+    top: 185px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
 }
 
 @media screen and (max-width: 544px) {
   .title {
-    width: 90%;
+    width: 80%;
   }
 
   .main {
-    width: 90%;
+    width: 85%;
   }
 
   .main-img {
     width: 60%;
   }
 
+  .main-img a img {
+    width: 300px;
+    height: 200px;
+  }
+
   .h1 {
     font-size: 30px;
   }
@@ -172,5 +389,26 @@
   .workshop-footer {
     height: 50px;
     line-height: 50px;
+  }
+
+  .phone {
+    max-width: 320px;
+    max-height: 215px;
+  }
+
+  .picture .left {
+    left: 5%;
+    top: 110px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
+
+  .picture .right {
+    right: 5%;
+    top: 110px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
   }
 }

@@ -9,10 +9,10 @@
     width: 100%;
   }
   .third{
-    width: 50%;
+    width: 44%;
   }
   .carousel {
-    width: 50%;
+    width: 40%;
   }
 }
 
@@ -83,17 +83,21 @@
 }
 .course-first-container,.course-second-container,.course-third-container{
   width: 100%;
-  background-size: cover;
-  background-position: top center;
 }
 .course-first-container {
   background: url('../imgs/about1.jpg');
+  background-position: top center;
+  background-size: cover;
 }   
 .course-second-container {
-  background: url('../imgs/about2.jpg') no-repeat fixed;
+  background: url('../imgs/about2.jpg');
+  background-position: top center;
+  background-size: cover;
 }
 .course-third-container{
-  background: url('../imgs/about3.jpg') no-repeat fixed;
+  background: url('../imgs/about3.jpg');
+  background-position: top center;
+  background-size: cover;
 }
 .course-first,.course-second,.course-third{
   padding-top: 350px;

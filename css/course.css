@@ -10,7 +10,7 @@
   }
 
   .third {
-    width: 50%;
+    width: 44%;
   }
 
   .first-3 {
@@ -18,7 +18,7 @@
   }
 
   .carousel {
-    width: 50%;
+    width: 40%;
   }
 }
 
@@ -116,20 +116,24 @@
 .course-second-container,
 .course-third-container {
   width: 100%;
-  background-size: cover;
-  background-position: top right;
 }
 
 .course-first-container {
-  background: url('../imgs/course1.jpg') no-repeat fixed;
+  background: url('../imgs/course1.jpg');
+  background-position: top center;
+  background-size: cover;
 }
 
 .course-second-container {
-  background: url('../imgs/course2.jpg') no-repeat fixed;
+  background: url('../imgs/course2.jpg');
+  background-position: top center;
+  background-size: cover;
 }
 
 .course-third-container {
-  background: url('../imgs/course3.jpg') no-repeat fixed;
+  background: url('../imgs/course3.jpg');
+  background-position: top center;
+  background-size: cover;
 }
 
 .course-first,

@@ -1,51 +1,68 @@
-.team-title{
+.team-title {
   width: 100%;
   background-color: #002f6c;
   color: #fff;
 }
-.title,.main{
+
+.title,
+.main {
   margin-left: auto;
   margin-right: auto;
 }
-.title{
+
+.title {
   height: 100px;
   align-items: center;
 }
-.h1{
+
+.h1 {
   line-height: 100px;
 }
-.img-size{
+
+.img-size {
   width: 100%;
   height: auto;
 }
-.main{
+
+.main {
   padding: 20px;
 }
-.every-card{
+
+.every-card {
   padding: 10px;
   border-radius: 2px;
   display: inline-block;
   box-sizing: border-box;
 }
-.font{
+
+.img a img {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.font {
   width: 100%;
   padding: 10px;
   text-align: center;
   border: 1px solid #eaeaea;
   font-size: 16px;
 }
-.font p{
+
+.font p {
   margin: 10px;
 }
-.font p:nth-child(2){
+
+.font p:nth-child(2) {
   margin-top: 20px;
 }
-.carousel{
+
+.carousel {
   margin-top: 40px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .home-h3 {
   min-height: 60px;
   border: 2px solid #002f6c;
@@ -62,49 +79,94 @@
 .home-h3>a:hover {
   text-decoration: none;
 }
-.carousel-control-prev-icon, .carousel-control-next-icon {
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
   display: inline-block;
   width: 30px;
   height: 50px;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.team-footer{
+
+.team-footer {
   width: 100%;
   height: 50px;
   line-height: 50px;
-  background-color: #aaa;
+  background-color: #ddd;
   text-align: center;
 }
-.team-footer p{
+
+.team-footer p {
   margin: 0;
   color: #8c8c8c;
 }
-@media screen and (min-width: 1200px) {
-  .title{
-    width: 45%;
+
+@media screen and (min-width: 1260px) {
+  .main {
+    width: 48%;
   }
-  .main{
-    width: 50%;
+
+  .title {
+    width: 44%;
   }
-  .every-card{
+
+  .every-card {
     width: 31.9%;
   }
+
   .carousel {
     width: 30%;
   }
+
+  .phone {
+    width: 450px;
+    height: 450px;
+  }
 }
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  .title{
-    width: 79%;
+
+@media screen and (min-width: 1200px) and (max-width: 1259px) {
+  .title {
+    width: 45%;
   }
-  .main{
-    width: 83.5%;
+
+  .main {
+    width: 50%;
   }
-  .every-card{
+
+  .every-card {
     width: 31.9%;
   }
+
+  .carousel {
+    width: 30%;
+  }
+
+  .phone {
+    width: 450px;
+    height: 450px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .title {
+    width: 79%;
+  }
+
+  .main {
+    width: 83.5%;
+  }
+
+  .every-card {
+    width: 31.9%;
+  }
+
   .carousel {
     width: 50%;
+  }
+
+  .phone {
+    width: 350px;
+    height: 350px;
   }
 }
 
@@ -112,14 +174,22 @@
   .title {
     width: 90%;
   }
-  .main{
+
+  .main {
     width: 100%;
   }
-  .every-card{
+
+  .every-card {
     width: 31.9%;
   }
+
   .carousel {
     width: 80%;
+  }
+
+  .phone {
+    width: 350px;
+    height: 350px;
   }
 }
 
@@ -127,12 +197,15 @@
   .title {
     width: 90%;
   }
-  .main{
+
+  .main {
     width: 100%;
   }
-  .every-card{
+
+  .every-card {
     width: 49%;
   }
+
   .carousel {
     width: 80%;
   }
@@ -143,20 +216,27 @@
 
   .h3 {
     font-size: 20px;
-    ;
+  }
+
+  .phone {
+    width: 250px;
+    height: 250px;
   }
 }
 
 @media screen and (max-width: 544px) {
   .title {
-    width: 90%;
+    width: 80%;
   }
-  .main{
+
+  .main {
     width: 100%;
   }
-  .every-card{
+
+  .every-card {
     width: 100%;
   }
+
   .carousel {
     width: 80%;
   }
@@ -167,5 +247,10 @@
 
   .h3 {
     font-size: 20px;
+  }
+
+  .phone {
+    width: 200px;
+    height: 200px;
   }
 }

@@ -1,29 +1,35 @@
-body{
-  margin:0;
-  padding:0;
-  font:12px "雅黑宋体", "微软雅黑", "新宋体", "宋体";
+body {
+  margin: 0;
+  padding: 0;
+  font: 12px "雅黑宋体", "微软雅黑", "新宋体", "宋体";
 }
-ul li{
+
+ul li {
   list-style: none;
 }
-a{
-  text-decoration:none;
-  color:#000;
-} 
-span,p{
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+span,
+p {
   line-height: 40px;
 }
-.container-fluid{
+
+.container-fluid {
   padding: 0;
 }
 
-.footer{
+.footer-container {
+  background-color: #ddd;
+}
+
+.footer {
   height: 45px;
   line-height: 45px;
   background-color: #fff;
-  color: #666;
+  color: #8c8c8c;
   text-align: center;
-}
-.footer-container{
-  background-color: #ddd;
 }

@@ -5,8 +5,7 @@ function ajax({url,type,data,dataType}){
 		//2.绑定监听事件
 		xhr.onreadystatechange=function(){
 			if(xhr.readyState==4&&xhr.status==200){
-				if(dataType!==undefined
-					&&dataType.toLowerCase()==="json")
+				if(dataType!==undefined && dataType.toLowerCase()==="json")
 					var res=JSON.parse(xhr.responseText)
 				else
 					var res=xhr.responseText
@@ -23,7 +22,7 @@ function ajax({url,type,data,dataType}){
 			//增加：设置请求消息头
 			xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
 		//4.发送请求
-		if(type.toLowerCase()=="post"&&data!==undefined)
+		if(type.toLowerCase()=="post" && data!==undefined)
 			xhr.send(data);
 		else
 			xhr.send(null);

@@ -14,7 +14,7 @@
 }
 
 .main{
-  margin-top: 20px;
+  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -29,7 +29,39 @@
   font-size: 17px;
   color: #002f6c;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1730px) {
+  .title{
+    width: 47%;
+  }
+  .main{
+    width: 47%;
+    display: flex;
+  }
+  .one-img>a>img{
+    width: 450px;
+    height: 300px;
+  }
+  .gallery-footer{
+    height: 330px;
+  }
+}
+@media screen and (min-width: 1260px) and (max-width: 1730px){
+  .title{
+    width: 60%;
+  }
+  .main{
+    width: 60%;
+    display: flex;
+  }
+  .one-img>a>img{
+    width: 450px;
+    height: 300px;
+  }
+  .gallery-footer{
+    height: 330px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1259px){
   .title{
     width: 44%;
   }
@@ -42,13 +74,13 @@
     height: 300px;
   }
   .gallery-footer{
-    height: 321px;
+    height: 330px;
   }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px){
   .title{
-    width: 60%;
+    width: 75%;
   }
   .main{
     width: 75%;
@@ -80,7 +112,7 @@
 
 @media screen and (min-width: 545px) and (max-width: 767px){
   .title{
-    width: 80%;
+    width: 65%;
   }
   .main{
     width: 100%;
@@ -119,9 +151,9 @@
 }
 .gallery-footer{
   width: 100%;
-  background-color: #aaa;
+  background-color: #ddd;
 }
 .foot-font{
   text-align: center;
-  color: #888;
+  color: #8c8c8c;
 }

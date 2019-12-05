@@ -1,4 +1,14 @@
 let url = window.location.href;
+console.log(url);
+//以下为截取url的方法
+function returnUrl(href) {
+  // indexOf 是查某个指定的字符串在字符串首次出现的位置（索引值） （也就是从前往后查）
+  // lastIndexOf 是从右向左查某个指定的字符串在字符串中最后一次出现的位置（也就是从后往前查）
+  // indexOf是从前向后查  而lastIndexOf是从后向前查   但是二者返回索引都是从前开始数数和计算的
+  let number = href.lastIndexOf("/");
+  return href.substring(number + 1);
+}
+
 $('.liHome a').each(function () {
   // console.log($(this));
   if (returnUrl($(this).attr('href')) == returnUrl(url)) {
@@ -14,7 +24,6 @@ $('.liHome a').each(function () {
   }
 });
 $('.min-liHome a').each(function () {
-  // console.log($(this));
   if (returnUrl($(this).attr('href')) == returnUrl(url)) {
     if ($(this).parent().parent().parent('.min-liHome').length !== 0) {
       $(this).parent().parent().parent().children(":first").addClass('active');
@@ -26,17 +35,6 @@ $('.min-liHome a').each(function () {
     $(this).removeClass('active');
   }
 });
-//以下为截取url的方法
-function returnUrl(href) {
-  let number = href.lastIndexOf("/");
-  return href.substring(number + 1);
-}
-
-function returnFileName(href) {
-  let number1 = href.lastIndexOf("/");
-  let number2 = href.substring(0, number1).lastIndexOf("/");
-  return href.substring(number1, number2 + 1);
-}
 
 $("li.hiddenLi").click(function () {
   console.log($(this).parent().parent().children(":first"));
@@ -119,25 +117,3 @@ $(".drow").click(function () {
     }
   }
 })
-// $("li.min-liHome").click(function () {
-//   $(this).children(":first").addClass("min-active").siblings().removeClass("min-active");
-//   // console.log('333');
-//   // console.log($(this).prev().children(":first"));
-//   $(this).prev().children(":first").removeClass("min-active");
-//   $(this).prev().prev().children(":first").removeClass("min-active");
-//   $(this).prev().prev().prev().children(":first").removeClass("min-active");
-//   $(this).prev().prev().prev().prev().children(":first").removeClass("min-active");
-//   $(this).prev().prev().prev().prev().prev().children(":first").removeClass("min-active");
-//   $(this).next().children(":first").removeClass("min-active");
-//   $(this).next().next().children(":first").removeClass("min-active");
-//   $(this).next().next().next().children(":first").removeClass("min-active");
-//   $(this).next().next().next().next().children(":first").removeClass("min-active");
-//   $(this).next().next().next().next().next().children(":first").removeClass("min-active");
-// })
-// $("li.min-hiddenLi").click(function () {
-//   console.log($(this).parent().parent().children(":first"));
-//   $(this).parent().parent().children(":first").addClass("min-visi");
-//   console.log('111');
-//   console.log($(this));
-//   $(this).addClass("min-active").siblings().removeClass("min-active");
-// })
