@@ -17,9 +17,11 @@ span,
 p {
   line-height: 40px;
 }
-
+h1{
+  line-height: 2.2 !important;
+}
 .container-fluid {
-  padding: 0;
+  padding: 0 !important;
 }
 
 .footer-container {

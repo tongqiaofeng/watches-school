@@ -1,129 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
+  <title>导航栏</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>手表学院</title>
-  <link rel="stylesheet" href="./css/common.css">
+  <link href="./css/bootstrap.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/header.css">
 </head>
 
 <body>
-  <div class="header-container">
-    <div class="container">
-      <img src="./imgs/cropped-logo.png" class="header-left-img" />
-      <div class="header-right">
-        <ul class="header-right-first-ul">
-          <li class="header-right-first-li liHome">
-            <a href="home.html" class="header-right-first-li-a active">
-              <span>首页</span>
+  <!--导航-->
+  <div class="container">
+    <div class="navbar navbar-fixed-top navbar-inverse navbar-expand-lg">
+      <div class="nav-logo">
+        <img class="img-responsive" src="./imgs/cropped-logo.png" style="height: 100%;width: auto;" />
+      </div>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navBar">
+        <span><img src="./imgs/line.png" style="width: 30px;height: 30px;"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navBar">
+        <ul class="nav navbar-nav min-right-first-ul">
+          <li class="nav-item min-liHome">
+            <a class="nav-link min-header-right-first-li-a" href="home.html">
+              <span class="span-style">首页</span>
             </a>
           </li>
-          <li class="header-right-first-li liHome">
-            <a href="about.html" class="header-right-first-li-a">
-              <span>关于我们</span>
-              <img src="./imgs/dropdown.png" style="width: 16px;height: 16px;">
+          <li class="dropdown nav-item min-liHome about1">
+            <a href="about.html" class="min-header-right-first-li-a">
+              <span class="span-style">关于我们</span>
             </a>
-            <ul class="header-right-second-ul">
-              <li class="hiddenLi"><a href="what.html">钟表师是什么？</a></li>
-              <li class="hiddenLi"><a href="training-center.html">我们的培训中心</a></li>
-              <li class="hiddenLi"><a href="prince.html">太子慈善机构</a></li>
-              <li class="hiddenLi"><a href="team.html">我们的团队</a></li>
+            <div class="about2" class="dropdown-toggle nav-link" data-toggle="dropdown">
+              <img src="./imgs/dropdown.png" style="width: 16px;height: 16px;" class="about">
+            </div>
+            <ul class="dropdown-menu" role="menu">
+              <li class="min-hiddenLi">
+                <a href="what.html">
+                  <span class="pad">钟表师是什么？</span>
+                </a>
+              </li>
+              <li class="min-hiddenLi">
+                <a href="training-center.html">
+                  <span class="pad">我们的培训中心</span>
+                </a>
+              </li>
+              <li class="min-hiddenLi">
+                <a href="prince.html">
+                  <span class="pad">太子慈善机构</span>
+                </a>
+              </li>
+              <li class="min-hiddenLi">
+                <a href="team.html">
+                  <span class="pad">我们的团队</span>
+                </a>
+              </li>
             </ul>
           </li>
-          <li class="header-right-first-li liHome">
-            <a href="course.html" class="header-right-first-li-a">
-              <span>课程</span>
-              <img src="./imgs/dropdown.png" style="width: 16px;height: 16px;">
+          <li class="dropdown nav-item min-liHome about1">
+            <a href="course.html" class="min-header-right-first-li-a">
+              <span class="span-style">课程</span>
             </a>
-            <ul class="header-right-second-ul">
-              <li class="hiddenLi"><a href="certificate.html">钟表制作认证</a></li>
-              <li class="hiddenLi"><a href="scholarship.html">奖学金</a></li>
-              <li class="hiddenLi"><a href="apprenticeship.html">加入我们</a></li>
+            <div class="about2" class="dropdown-toggle nav-link" data-toggle="dropdown">
+              <img src="./imgs/dropdown.png" style="width: 16px;height: 16px;" class="classes">
+            </div>
+            <ul class="dropdown-menu" role="menu">
+              <li class="min-hiddenLi">
+                <a href="certificate.html">
+                  <span class="pad">钟表制作认证</span>
+                </a>
+              </li>
+              <li class="min-hiddenLi">
+                <a href="scholarship.html">
+                  <span class="pad">奖学金</span>
+                </a>
+              </li>
+              <li class="min-hiddenLi">
+                <a href="apprenticeship.html">
+                  <span class="pad">加入我们</span>
+                </a>
+              </li>
             </ul>
           </li>
-          <li class="header-right-first-li liHome">
-            <a href="contact.html" class="header-right-first-li-a">联系我们</a>
-          </li>
-          <li class="header-right-first-li liHome">
-            <a href="gallery.html" class="header-right-first-li-a">
-              <span>我们的环境</span>
-              <img src="./imgs/dropdown.png" style="width: 16px;height: 16px;">
+          <li class="nav-item min-liHome">
+            <a class="nav-link min-header-right-first-li-a" href="contact.html">
+              <span class="span-style">联系我们</span>
             </a>
-            <ul class="header-right-second-ul">
-              <li class="hiddenLi"><a href="workshop.html">我们工作室</a></li>
-              <li class="hiddenLi"><a href="equipment.html">我们的设备</a></li>
+          </li>
+          <li class="dropdown nav-item min-liHome about1">
+            <a href="gallery.html" class="min-header-right-first-li-a">
+              <span class="span-style">我们的环境</span>
+            </a>
+            <div class="about2" class="dropdown-toggle nav-link" data-toggle="dropdown">
+              <img src="./imgs/dropdown.png" style="width: 16px;height: 16px;" class="drow">
+            </div>
+            <ul class="dropdown-menu" role="menu">
+              <li class="min-hiddenLi">
+                <a href="workshop.html">
+                  <span class="pad">我们工作室</span>
+                </a>
+              </li>
+              <li class="min-hiddenLi">
+                <a href="equipment.html">
+                  <span class="pad">我们的设备</span>
+                </a>
+              </li>
             </ul>
           </li>
-          <li class="header-right-first-li liHome">
-            <a href="problem.html" class="header-right-first-li-a">常问问题</a>
+          <li class="nav-item min-liHome">
+            <a class="nav-link" href="problem.html">
+              <span class="span-style">常问问题</span>
+            </a>
           </li>
         </ul>
       </div>
-      <div class="min-header-right">
-        <div class="min-img">
-          <img src="./imgs/line.png" class="min-icon" style="width: 28px; height: 28px;" />
-        </div>
-        <div class="min-navbar" style="display: none;">
-          <ul class="min-right-first-ul">
-            <li class="min-header-right-first-li min-liHome">
-              <a href="home.html" class="min-header-right-first-li-a">
-                <span>首页</span>
-              </a>
-            </li>
-            <li class="min-header-right-first-li min-liHome about1">
-              <a href="about.html" class="min-header-right-first-li-a">
-                <span>关于我们</span>
-              </a>
-              <div class="about2">
-                <img src="./imgs/dropdown.png" style="width: 16px;height: 16px;" class="about">
-              </div>
-              <ul class="min-header-right-second-ul" style="display: none;">
-                <li class="min-hiddenLi"><a href="what.html">钟表师是什么？</a></li>
-                <li class="min-hiddenLi"><a href="training-center.html">我们的培训中心</a></li>
-                <li class="min-hiddenLi"><a href="prince.html">太子慈善机构</a></li>
-                <li class="min-hiddenLi"><a href="team.html">我们的团队</a></li>
-              </ul>
-            </li>
-            <li class="min-header-right-first-li min-liHome about1">
-              <a href="course.html" class="min-header-right-first-li-a">
-                <span>课程</span>
-              </a>
-              <div class="about2">
-                <img src="./imgs/dropdown.png" style="width: 16px;height: 16px;" class="classes">
-              </div>
-              <ul class="min-header-right-second-ul" style="display: none;">
-                <li class="min-hiddenLi"><a href="certificate.html">钟表制作认证</a></li>
-                <li class="min-hiddenLi"><a href="scholarship.html">奖学金</a></li>
-                <li class="min-hiddenLi"><a href="apprenticeship.html">加入我们</a></li>
-              </ul>
-            </li>
-            <li class="min-header-right-first-li min-liHome">
-              <a href="contact.html" class="min-header-right-first-li-a">联系我们</a>
-            </li>
-            <li class="min-header-right-first-li min-liHome about1">
-              <a href="gallery.html" class="min-header-right-first-li-a">
-                <span>我们的环境</span>
-              </a>
-              <div class="about2">
-                <img src="./imgs/dropdown.png" style="width: 16px;height: 16px;" class="drow">
-              </div>
-              <ul class="min-header-right-second-ul" style="display: none;">
-                <li class="min-hiddenLi"><a href="workshop.html">我们工作室</a></li>
-                <li class="min-hiddenLi"><a href="equipment.html">我们的设备</a></li>
-              </ul>
-            </li>
-            <li class="min-header-right-first-li min-liHome">
-              <a href="problem.html" class="min-header-right-first-li-a">常问问题</a>
-            </li>
-          </ul>
-        </div>
-      </div>
     </div>
   </div>
-  <script src="./js/jquery.min.js"></script>
+  <!-- <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.js"></script> -->
   <script src="./js/header.js"></script>
 </body>
 

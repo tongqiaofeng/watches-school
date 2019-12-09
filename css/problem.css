@@ -35,7 +35,7 @@
     margin-left: 0;
   }
   .home-title{
-    margin-left: auto;
+    width: 50%;
   }
   .home-main{
     padding-top: 15px;
@@ -59,7 +59,7 @@
     margin-left: 0;
   }
   .home-title{
-    margin-left: auto;
+    width: 80%;
   }
   .home-main{
     padding-top: 15px;
@@ -85,7 +85,7 @@
     font-size: 30px;
   }
   .home-title{
-    margin-left: 10%;
+    width: 80%;
   }
   .home-main{
     padding-top: 300px;
@@ -105,13 +105,12 @@
   .home-font {
     width: 80%;
     margin-top: 50px;
-    margin-left: 10%;
   }
   .home-h1{
     font-size: 30px;
   }
   .home-title{
-    margin-left: 10%;
+    width: 80%;
   }
   .home-main{
     padding-top: 60px;
@@ -137,11 +136,13 @@
 }
 
 .home-title {
+  margin-left: auto;
   margin-right: auto;
   color: #fff;
   text-align: left;
 }
 .home-font {
+  margin-left: auto;
   margin-right: auto;
   color: #fff;
   text-align: left;
